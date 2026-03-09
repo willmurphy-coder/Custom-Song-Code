@@ -2,7 +2,11 @@
 use_bpm 117
 use_synth :piano
 
-live_loop :billie_jean do
+#Variable storage
+heehee = "C:/Users/William_Murphy III/Desktop/HeeHee.wav"
+
+#FUNCTION
+define :billienotes do
   play :fs2
   sleep 0.5
   play :cs2
@@ -19,6 +23,15 @@ live_loop :billie_jean do
   sleep 0.5
   play :cs2
   sleep 0.5
+end
+#VARIABLE with CUSTOM SAMPLE
+sample heehee
+sleep 2
+
+
+
+live_loop :billie_jean do
+  billienotes
 end
 
 sleep 8
