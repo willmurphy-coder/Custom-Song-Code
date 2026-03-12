@@ -4,6 +4,10 @@ use_synth :piano
 
 #Variable storage
 heehee = "C:/Users/William_Murphy III/Desktop/HeeHee.wav"
+#Array
+pianoNotes = [:fs2,:cs2,:e2,:fs2,:e2,:cs2,:b1,:cs2]
+p = 0
+
 
 #FUNCTION
 define :billienotes do
