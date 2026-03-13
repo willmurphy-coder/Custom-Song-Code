@@ -11,31 +11,28 @@ p = 0
 
 #FUNCTION
 define :billienotes do
-  play :fs2
-  sleep 0.5
-  play :cs2
-  sleep 0.5
-  play :e2
-  sleep 0.5
-  play :fs2
-  sleep 0.5
-  play :e2
-  sleep 0.5
-  play :cs2
-  sleep 0.5
-  play :b1
-  sleep 0.5
-  play :cs2
-  sleep 0.5
+  
 end
-#VARIABLE with CUSTOM SAMPLE
-sample heehee
-sleep 2
+
+#VARIABLE with CUSTOM SAMPLE and AMP
+a = 1
+4.times do
+  sample heehee, amp: a
+  sleep 1.5
+  a = a - 0.3
+end
+
+
 
 
 
 live_loop :billie_jean do
-  billienotes
+  8.times do
+    play(pianoNotes[p])
+    sleep 0.5
+    p = p + 1
+  end
+  p = 0
 end
 
 sleep 8
