@@ -1,4 +1,4 @@
-#Billie Jean by Micheal Jackson
+#Billie Jean beginning by Micheal Jackson
 use_bpm 117
 use_synth :piano
 
@@ -21,8 +21,6 @@ a = 1
   sleep 1.5
   a = a - 0.3
 end
-
-
 
 
 
